@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DevanshuMehta</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!--Seo Tags-->
+    <meta name="description" content="Distribution"/>
+    <meta name="keywords" content="Jinisha Enterprise"/>
+    <meta name="robots" content="index, follow">
+
+
+    <link rel="stylesheet" type="text/css" href="css/vendor.bundle.css">
+    <link rel="stylesheet" type="text/css" href="css/fontawesome.css">
+    <link rel="stylesheet" type="text/css" href="css/glyphicons.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link id="style-css" rel="stylesheet" type="text/css" href="css/dev-css.css?ver=1.0.1">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+<body class="site-body style-v1">
+
+<button onclick="myNavigation('index')" id="myBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i>
+</button>
+
+<!-- Header -->
+<header class="site-header header-s1 is-transparent is-sticky">
+
+    <!-- Navbar -->
+    <span id="index"></span>
+    <div class="navbar navbar-primary">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand">
+                <img class="logo logo-dark"
+                     src="https://fontmeme.com/permalink/171229/3b8e49c933187bd3752e226b437cb252.png"></a>
+            <a class = navbar-brand">
+                <img class="logo logo-dark"
+                     src="https://fontmeme.com/permalink/171229/9615394fa53934e08eafb7e77e883a44.png">
+            </a>
+            <!-- #end Logo -->
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainnav"
+                        aria-expanded="false">
+                    <span class="sr-only">Menu</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- Q-Button for Mobile -->
+
+            </div>
+
+            <!-- MainNav -->
+
+            <nav class="navbar-collapse collapse" id="mainnav">
+                <ul class="nav navbar-nav">
+
+                    <li class="active"><a href="index.html"><span id="aindex" onclick="myNavigation('index');" class="pointer">Home</span></a>
+                    </li>
+
+                    <li><a><span id="awelcome" onclick="myNavigation('welcome');" class="pointer">About Me</span></a>
+                    </li>
+
+                    <li><a><span id="aservices" onclick="myNavigation('serv-2');" class="pointer">Skills</span></a></li>
+
+                    <li><a><span id="aportfolios" onclick="myNavigation('portfolios');" class="pointer">Projects</span></a>
+                    </li>
+
+                    <li class="quote-btn"><a class="btn"><span id="acontact" onclick="myNavigation('contact');"
+                                                               class="pointer">Contact</span></a></li>
+
+                </ul>
+
+            </nav>
+
+            <!-- #end MainNav -->
+        </div>
+    </div>
+    <!-- #end Navbar -->
+
+
+    <!-- Banner/Slider -->
+    <div id="slider" class="banner banner-slider slider-large carousel slide carousel-fade">
+
+        <!-- particles.js container -->
+        <div id="particles-js"></div>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/DM-backgr.jpg');">
+                    <div class="banner-content">
+                        <div class="container">
+                            <!--<div class="my-pic wow fadeInUp" data-wow-duration="0.5s" data-wow-offset="200"-->
+                                 <!--style="visibility: visible; animation-duration: 0.5s; animation-name: fadeInUp;">-->
+                                <!--<center><img src="img/devanshu-1.jpg" alt="my profile" height="242" width="222">-->
+                                <!--</center>-->
+                            <!--</div>-->
+                            <br>
+                            <div class="row">
+                                <center>
+                                    <div class="banner-text light" id="bwelcome" onclick="myNavigation('welcome');">
+                                        <img class="logo logo-dark"
+                                             src="https://fontmeme.com/permalink/171229/da24fc5ea841dc28e723824ef2a6266b.png">
+                                        <img class="logo logo-dark"
+                                             src="https://fontmeme.com/permalink/171229/5c2e158f0bdd4ca9bd52cf3a9ae25768.png">
+                                    </div>
+
+                                </center>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="mouse">
+                                <center>
+                                    <i class="fa fa-angle-double-up fa-3x anime" style="color: #ffffff" aria-hidden="true"></i>
+                                </center>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--#end Banner/Slider-->
+
+</header>
+
+<span id="welcome"></span>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="section section-services">
+
+
+    <!-- Feature Row  -->
+    <div class="feature-row feature-service-row row feature-s4 off-text boxed-filled boxed-w">
+        <div >
+            <div>
+                <center><h2 class="heading-section">About Me</h2></center>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+
+</div>
+
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
+<!-- Scroll-to-top button script-->
+<script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function myNavigation(id) {
+        $('html,body').animate({
+                scrollTop: $("#" + id).offset().top
+            },
+            1000);
+
+    };
+
+    // Up and down animation.
+    function loop() {
+        $('.anime').animate({'top': '40'}, {
+            duration: 1000,
+            complete: function () {
+                $('.anime').animate({top: 0}, {
+                    duration: 1000,
+                    complete: loop
+                });
+            }
+        });
+    }
+    loop();
+
+</script>
+
+</body>
+</html>

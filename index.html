@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <title>JinishaGroup</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!--Seo Tags-->
+    <meta name="description" content="Distribution"/>
+    <meta name="keywords" content="Jinisha Enterprise"/>
+    <meta name="robots" content="index, follow">
+
+
+    <link rel="stylesheet" type="text/css" href="css/vendor.bundle.css">
+    <link rel="stylesheet" type="text/css" href="css/fontawesome.css">
+    <link rel="stylesheet" type="text/css" href="css/glyphicons.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link id="style-css" rel="stylesheet" type="text/css" href="css/style.css?ver=1.0.1">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+
+<body class="site-body style-v1">
+
+<!-- Start Loading page -->
+<div id="loader" class="loading">
+    <div class="loading-wrapper loaded">
+        <div class="rec r1"></div>
+        <div class="rec r2"></div>
+        <div class="rec r3"></div>
+    </div>
+
+    <br>
+    <div class="loading-wrapper-dev loaded">
+        <div class="rec-dev r1"></div>
+        <div class="rec-dev r2-dev"></div>
+        <div class="rec-dev r3-dev"></div>
+    </div>
+
+</div>
+<!-- End Loading page -->
+
+<button onclick="myNavigation('index')" id="myBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+
+<!-- Header -->
+<header class="site-header header-s1 is-transparent is-sticky">
+
+    <!-- Navbar -->
+    <span id="index"></span>
+    <div class="navbar navbar-primary">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img class="logo logo-dark"
+                     src="img/logo_1.png">
+            </a>
+            <!-- #end Logo -->
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainnav"
+                        aria-expanded="false">
+                    <span class="sr-only">Menu</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- Q-Button for Mobile -->
+
+            </div>
+
+            <!-- MainNav -->
+            <nav class="navbar-collapse collapse" id="mainnav">
+                <ul class="nav navbar-nav">
+
+                    <li class="active"><a><span id="aindex" onclick="myNavigation('index');" class="pointer">Home</span></a></li>
+
+                    <li><a><span id="aservices"  onclick="myNavigation('serv-2');" class="pointer">Services</span></a></li>
+
+                    <li><a><span id="awelcome"  onclick="myNavigation('welcome');" class="pointer">About Us</span></a></li>
+
+                    <li><a><span id="aportfolios"  onclick="myNavigation('portfolios');" class="pointer">Portfolios</span></a></li>
+
+                    <li class="quote-btn"><a class="btn"><span id="acontact"  onclick="myNavigation('contact');" class="pointer">Contact</span></a></li>
+
+                </ul>
+
+            </nav>
+            <!-- #end MainNav -->
+        </div>
+    </div>
+    <!-- #end Navbar -->
+
+
+    <!-- Banner/Slider -->
+    <div id="slider" class="banner banner-slider slider-large carousel slide carousel-fade">
+
+        <!-- particles.js container -->
+        <div id="particles-js"></div>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/presence_2.jpg');">
+                    <div class="banner-content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="banner-text al-left pos-left light">
+                                    <h2 class="noselect"><span
+                                            class="bg_dark">Strong Presence<strong>.</strong></span>
+                                    </h2>
+                                    <p><span class="bg_dark">Jinisha Group never strives to make its presence noticed, we just make sure that our absence is felt.</span>
+                                    </p><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/modern_reporting.jpg');">
+                    <div class="banner-content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="banner-text al-left pos-left light">
+                                    <h2><span class="bg_dark">Modern Reporting<strong>.</strong></span></h2>
+                                    <p><span class="bg_dark">Our teams at Jinisha Group believes that the best business plans are straightforward reports that spell out the who, what, where, why and how much.  </span>
+                                    </p><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/optimum_logistics.jpg');">
+                    <div class="banner-content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="banner-text al-left pos-left light">
+                                    <h2><span class="bg_dark">Optimum Logistics<strong>.</strong></span></h2>
+                                    <p><span class="bg_dark">Unlike other amatures, the professionals at Jinisha Group discuss logistics and find new ways to improvise it. </span>
+                                    </p><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#slider" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#slider" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+
+    </div>
+    <!--#end Banner/Slider-->
+
+</header>
+<!-- End Header -->
+
+<!--service section-->
+<span id="serv-2" class="content row"></span>
+<br>
+<div class="section section-services">
+        <div class="container">
+            <div class="content row">
+                <!-- Feature Row  -->
+                <div class="feature-row feature-service-row row feature-s4 off-text boxed-filled boxed-w">
+                    <div class="heading-box clearfix">
+                        <div class="col-sm-3">
+                            <h2 class="heading-section-1">Welcome to <br>Jinisha Group</h2>
+                        </div>
+                        <div class="col-sm-8 col-sm-offset-1">
+                            <span> Jinisha Group is a full-service provider of FMCG distribution since 1975, establishing
+                leading position in the distribution market. We build the bridge between product and consumer by enhancing
+                the velocity of product movement so that it reaches the consumer rapidly and efficiently.
+                We apply the industry best practices, diligence and problem-solving techniques to each consumer, bringing you
+                the best outcomes.</span>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-md-3 col-sm-6 col-xs-6 even">
+                        <!-- Feature box -->
+                        <div class="feature">
+                            <a href="">
+                                <div class="fbox-photo">
+                                    <img src="img/distribution_1.jpg" alt="">
+                                </div>
+                                <div class="fbox-over">
+                                    <h3 class="title" style="color: #ffffff">Distribution</h3>
+                                    <div class="fbox-content" style="margin-top: 5px">
+                                        <p>We expertly serve all distributions channels to fully attend to total product life
+                                            cycle and it's hygiene from sourcing to marketing to distribution.</p><br>
+                                        <a href="services.html#distribution"><span class="btn">Learn More</span></a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- End Feature box -->
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6 odd">
+                        <!-- Feature box -->
+                        <div class="feature">
+                            <a href="">
+                                <div class="fbox-photo">
+                                    <img src="img/marketing.jpg" alt="">
+                                </div>
+                                <div class="fbox-over">
+                                    <h3 class="title" style=" color: #ffffff">Marketing</h3>
+                                    <div class="fbox-content" >
+                                        <p>We not only know the moment of need for consumers but actually service that
+                                            moment of need for them using the Marketing as a Service (MaaS) technique.</p>
+                                        <br>
+                                        <a href="services.html#distribution"> <div class="btn">Learn More</div></a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- End Feature box -->
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6 even">
+                        <!-- Feature box -->
+                        <div class="feature">
+                            <a href="">
+                                <div class="fbox-photo">
+                                    <img src="img/technology_1.jpg" alt="">
+                                </div>
+                                <div class="fbox-over">
+                                    <h3 class="title" style="color: #ffffff">Technology</h3>
+                                    <div class="fbox-content">
+                                        <p> We bring our customers a smooth and satisfactory experience in terms of reporting, delivering,
+                                            communication, and so on through our managed IT Solutions.</p>
+                                        <br>
+                                        <a href="services.html#tech"><span class="btn">Learn More</span></a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- End Feature box -->
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6 odd">
+                        <!-- Feature box -->
+                        <div class="feature">
+                            <a href="">
+                                <div class="fbox-photo">
+                                    <img src="img/sales.jpeg" alt="">
+                                </div>
+                                <div class="fbox-over">
+                                    <h3 class="title" style="color: #ffffff">Sales</h3>
+                                    <div class="fbox-content">
+                                        <p> Our dedicated sales staff makes our sales skyrocketing by using the latest technology
+                                        and taking sales decisions based on real time data and results.</p>
+                                        <br><a href="services.html#tech"><span class="btn">Learn More</span></a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- End Feature box -->
+                    </div>
+
+                </div>
+                <!-- Feture Row  #end -->
+
+            </div>
+            <br>
+            <br>
+
+
+        </div>
+    </div>
+<!--End service section-->
+
+<!-- Why Choose -->
+<span id="welcome"></span>
+<br>
+<br>
+<br>
+<br>
+<div  class="section section-contents section-pad light has-bg fixed-bg" style="background-image: url(img/DM-backgr.jpg);">
+
+    <div class="container">
+        <div id="firms" class="content row">
+
+            <center><h2  class="heading-section">About Us</h2></center>
+            <br>
+
+
+            <p class="dev-about-us"> "Headquartered in Ahmedabad, Gujarat, Jinisha Group is an established business conglomerate which is trusted
+                and respected for over four decades, Jinisha Group has consistently maintained its leadership position in the
+                distributorship field. Jinisha Group has diversified businesses in five strategic firms:"</p>
+
+            <div class="clear"></div>
+            <hr>
+            <div class="feature-intro space-top">
+                <div class="row">
+                    <div class="col-sm-5 res-s-bttm">
+
+                        <div class="icon-box style-s1 photo-plx-full">
+                            <em class="fa fa-eercast" aria-hidden="true"></em>
+                        </div>
+                        <h4 style="font-size: larger">•<b> Jinisha Enterprise</b></h4>
+
+                    </div>
+                    <div class="col-sm-5 res-s-bttm">
+                        <div class="icon-box style-s1 photo-plx-full">
+                            <em class="fa fa-eercast" aria-hidden="true"></em>
+                        </div>
+                        <h4 style="font-size: larger">•<b> Mehta Enterprise</b></h4>
+
+                    </div>
+                    <div class="col-sm-5 res-s-bttm">
+                        <div class="icon-box style-s1">
+                            <em class="fa fa-eercast" aria-hidden="true"></em>
+                        </div>
+                        <h4 style="font-size: larger">•<b> Sarthav Enterprise</b></h4>
+
+                    </div>
+                    <div class="col-sm-5 res-s-bttm">
+                        <div class="icon-box style-s1">
+                            <em class="fa fa-eercast" aria-hidden="true"></em>
+                        </div>
+                        <h4 style="font-size: larger">•<b> Mehta Champaklal Amratlal</b></h4>
+
+                    </div>
+                    <div class="col-sm-5 res-s-bttm">
+                        <div class="icon-box style-s1">
+                            <em class="fa fa-eercast" aria-hidden="true"></em>
+                        </div>
+                        <h4 style="font-size: larger">•<b> Doshi Tarakkumar Shailendrakumar</b></h4>
+                        <!--<p><br><a href="">Read more...</a></p>-->
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <br>
+            <br>
+            <center>
+            <div class="quote-btn"><a class="btn pointer" href="About_Us.html">Learn More</a></div>
+            </center>
+        </div>
+    </div>
+</div>
+<!-- End Why Choose -->
+
+<!-- Portfolios -->
+<div class="container">
+        <div id="portfolios" class="content row"></div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- Feature Row  -->
+        <h2 class="heading-section">Portfolios</h2>
+        <br>
+        <div class="feature-row feature-service-row row feature-s4 off-text boxed-filled boxed-w">
+            <div class="col-sm-3">
+                <!-- Feature box -->
+                <div class="feature">
+                    <a href="" target="_blank">
+                        <div class="fbox-photo">
+                            <img src="img/Parle_logo_1.jpg" alt="">
+                        </div>
+                        <div class="fbox-over">
+                            <h3 class="title" style="color: #ffffff">Parle</h3>
+                            <div class="fbox-content">
+                                <p>Since 1929, the makers of the world's largest selling biscuit, Parle-G, and a
+                                    host of other very popular brands, the Parle name symbolizes quality, nutrition and
+                                    superior
+                                    taste.</p>
+                                <br>
+                                <a href="Portfolios.html#parle"> <span class="btn">Learn More</span></a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- End Feature box -->
+            </div>
+            <div class="col-sm-3">
+                <!-- Feature box -->
+                <div class="feature">
+                    <a href="" target="_blank">
+                        <div class="fbox-photo">
+                            <img src="img/wagh-bakri_logo.jpg" alt="">
+                        </div>
+                        <div class="fbox-over">
+                            <h3 class="title" style="color: #ffffff">Wagh-Bakri</h3>
+                            <div class="fbox-content">
+                                <p>Wagh Bakri Tea Group is having presence in tea business since 1892.
+                                    With huge number of Wagh Bakri tea lovers around the world, it has emerged as a
+                                    truly global brand.</p>
+                                <br>
+                                <a href="Portfolios.html#wb"> <span class="btn">Learn More</span></a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- End Feature box -->
+            </div>
+            <div class="col-sm-3">
+                <!-- Feature box -->
+                <div class="feature">
+                    <a href="" target="_blank">
+                        <div class="fbox-photo">
+                            <img src="img/kelloggs_logo_1.png" alt="">
+                        </div>
+                        <div class="fbox-over">
+                            <h3 class="title" style="color: #ffffff">Kelloggs</h3>
+                            <div class="fbox-content">
+                                <p>From snacks and frozen foods to our breakfast icons, we’re passionate about our
+                                    family
+                                    of brands and the markets we’re in.</p>
+                                <br>
+                                <a href="Portfolios.html#kel"> <span class="btn">Learn More</span></a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- End Feature box -->
+            </div>
+            <div class="col-sm-3">
+                <!-- Feature box -->
+                <div class="feature">
+                    <a href="" target="_blank">
+                        <div class="fbox-photo">
+                            <img src="img/Manpasand_logo.jpg" alt="">
+                        </div>
+                        <div class="fbox-over">
+                            <h3 class="title" style="color: #ffffff">Manpasand</h3>
+                            <div class="fbox-content">
+                                <p>Manpasand is a fruit drink manufacturing company with a primary focus on mango
+                                    fruit,
+                                    which is the leading flavour for juice drinks in India.</p>
+                                <br>
+                                <a href="Portfolios.html#manp"> <span class="btn">Learn More</span></a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- End Feature box -->
+            </div>
+            <div class="col-sm-3">
+                <!-- Feature box -->
+                <div class="feature">
+                    <a href="" target="_blank">
+                        <div class="fbox-photo">
+                            <img src="img/Colgate_logo.jpg" alt="">
+                        </div>
+                        <div class="fbox-over">
+                            <h3 class="title" style="color: #ffffff">Colgate</h3>
+                            <div class="fbox-content">
+                                <p>Colgate was established in New York City early in the 19th century is now,
+                                    more than 200 years later, a truly global company serving hundreds of millions
+                                    of
+                                    consumers worldwide.</p>
+                                <br>
+                                <a href="Portfolios.html#colg"><span class="btn">Learn More</span></a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- End Feature box -->
+            </div>
+            <div class="col-sm-3">
+                <!-- Feature box -->
+                <div class="feature">
+                    <a href="" target="_blank">
+                        <div class="fbox-photo">
+                            <img src="img/RSPL.png" alt="">
+                        </div>
+                        <div class="fbox-over">
+                            <h3 class="title" style="color: #ffffff">Ghari Detergent</h3>
+                            <div class="fbox-content">
+                                <p>RSPL Group is more than 5500 crore diversified conglomerate, which is committed to
+                                    value for money propositions & credited with several innovations over last 3 decades.</p>
+                                <br>
+                                <a href="Portfolios.html#ghari"><span class="btn">Learn More</span></a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- End Feature box -->
+            </div>
+            <div class="col-sm-3">
+                <!-- Feature box -->
+                <div class="feature">
+                    <a href="tv-ad-distribution.html" target="_blank">
+                        <div class="fbox-photo">
+                            <img src="img/Amul_logo.jpg" alt="">
+                        </div>
+                        <div class="fbox-over">
+                            <h3 class="title" style="color: #ffffff">Amul</h3>
+                            <div class="fbox-content">
+                                <p>Amul emerged from India as the largest milk producer in the world.
+                                    It's success has not only been emulated in India but also serves rest of the
+                                    World.</p>
+                                <br>
+                                <a href="Portfolios.html#amul"><span class="btn">Learn More</span></a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- End Feature box -->
+            </div>
+            <div class="col-sm-3">
+                <!-- Feature box -->
+                <div class="feature">
+                    <a href="tv-ad-distribution.html" target="_blank">
+                        <div class="fbox-photo">
+                            <img src="img/Paseo.jpg" alt="">
+                        </div>
+                        <div class="fbox-over">
+                            <h3 class="title" style="color: #ffffff">Paseo</h3>
+                            <div class="fbox-content">
+                                <p>PASEO Products are made from fibres sourced from responsibly managed forests,
+                                    it's
+                                    Forest
+                                    Conservation Policy is designed to protect forests from deforestation.</p>
+                                <br>
+                                <a href="Portfolios.html#pas"><span class="btn">Learn More</span></a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- End Feature box -->
+            </div>
+        </div>
+        <!-- Feture Row  #end -->
+
+    </div>
+<br>
+<br>
+<!-- End Portfolios -->
+
+<!-- Contact section -->
+<div id="contact" class="call-action cta-small has-bg bg-primary">
+    <div class="cta-block">
+        <div class="container">
+            <center><div class="content row">
+                <div >
+                    <h2>Have any Questions?</h2>
+                    <p>We're here to help. Please feel free to contact our experts.</p>
+                    <strong>Email-ID: </strong><p style="text-decoration: blink">JinishaGroup@gmail.com</p>
+                    <strong>Phone: </strong><p>+91-9898297633 (M)</p>
+                </div>
+            </div></center>
+        </div>
+    </div>
+</div>
+
+<!-- Copyright -->
+<div class="copyright style-v2">
+    <div class="container">
+        <div class="row">
+
+            <div class="row">
+                <div class="site-copy col-sm-7">
+                    <p>&copy; 2017 JINISHA GROUP.
+                </div>
+                <div class="site-by col-xs-5 al-right">
+                    <p>Design by DEVANSHU MEHTA.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- End Copyright -->
+
+<!-- Scripting section -->
+
+<!-- JavaScript Bundle -->
+<script src="js/jquery.bundle.js"></script>
+<!-- Theme Script init() -->
+<script src="js/script.js"></script>
+<!-- Particle.js scripts -->
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111589969-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-111589969-1');
+</script>
+
+<!-- Scroll-to-top button script-->
+<script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function myNavigation(id){
+        $('html,body').animate({
+                scrollTop: $("#" + id).offset().top},
+            1000);
+
+    };
+
+    setTimeout(fade_out, 200);
+
+    function fade_out() {
+        // $("#loader").fadeOut(2000);
+        $("#loader").fadeOut();
+    }
+
+</script>
+
+<!-- End scripting section -->
+
+</body>
+
+
+</html>
